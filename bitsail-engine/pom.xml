@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.bytedance.bitsail</groupId>
+        <artifactId>bitsail-all</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>bitsail-engine</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>bitsail-engine-flink-1.11</module>
+        <module>bitsail-engine-flink-1.12</module>
+        <module>bitsail-engine-flink-base</module>
+    </modules>
+
+<!--    <profiles>-->
+<!--        <profile>-->
+<!--            <id>scala-2.12</id>-->
+<!--            <modules>-->
+<!--                &lt;!&ndash; flink 1.15+ only support scala 2.12 &ndash;&gt;-->
+<!--                <module>bitsail-engine-flink-1.16</module>-->
+<!--            </modules>-->
+<!--        </profile>-->
+<!--    </profiles>-->
+
+</project>
