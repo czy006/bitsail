@@ -31,6 +31,11 @@
             <artifactId>bitsail-client-api</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>com.bytedance.bitsail</groupId>
+            <artifactId>bitsail-client-entry-flink</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.bytedance.bitsail</groupId>

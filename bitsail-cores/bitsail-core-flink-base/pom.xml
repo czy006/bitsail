@@ -31,6 +31,11 @@
             <artifactId>bitsail-base</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>com.bytedance.bitsail</groupId>
+            <artifactId>bitsail-engine-flink-base_${scala.binary.version}</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.bytedance.bitsail</groupId>

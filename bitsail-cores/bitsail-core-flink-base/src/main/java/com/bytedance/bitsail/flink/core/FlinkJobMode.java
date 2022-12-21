@@ -22,6 +22,7 @@ import com.bytedance.bitsail.base.runtime.metrics.BitSailClientMetricsPlugin;
 import com.bytedance.bitsail.base.runtime.progress.JobProgressPlugin;
 import com.bytedance.bitsail.common.configuration.BitSailConfiguration;
 import com.bytedance.bitsail.common.util.Preconditions;
+import com.bytedance.bitsail.engine.flink.FlinkStreamExecutionEnvInitializer;
 import com.bytedance.bitsail.flink.core.option.FlinkCommonOptions;
 import com.bytedance.bitsail.flink.core.runtime.restart.RestartStrategy;
 
@@ -103,7 +104,8 @@ public enum FlinkJobMode {
   }
 
   public StreamExecutionEnvironment getStreamExecutionEnvironment(BitSailConfiguration commonConfiguration) {
-    return StreamExecutionEnvironment.getExecutionEnvironment();
+    StreamExecutionEnvironment streamExecutionEnvironment = FlinkStreamExecutionEnvInitializer.getStreamExecutionEnvironment();
+    return streamExecutionEnvironment.getExecutionEnvironment();
   }
 
   public TableEnvironment getStreamTableEnvironment(StreamExecutionEnvironment executionEnvironment) {

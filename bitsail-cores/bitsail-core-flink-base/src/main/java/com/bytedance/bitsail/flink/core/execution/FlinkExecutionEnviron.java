@@ -86,7 +86,7 @@ public class FlinkExecutionEnviron extends ExecutionEnviron {
     flinkJobMode = Mode.STREAMING.equals(mode) ?
         FlinkJobMode.STREAMING :
         FlinkJobMode.BATCH;
-
+    // TODO Goto Proxy Bridege to get it
     this.executionEnvironment = flinkJobMode.getStreamExecutionEnvironment(commonConfiguration);
     this.tableEnvironment = flinkJobMode.getStreamTableEnvironment(executionEnvironment);
   }

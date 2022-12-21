@@ -162,6 +162,7 @@
         </dependency>
     </dependencies>
 
+    <!--  TODO 进行替换  -->
     <build>
         <finalName>bitsail-engine-flink-${project.version}</finalName>
         <plugins>

@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>bitsail-engine-flink-1.11</artifactId>
+    <artifactId>bitsail-engine-flink-1.11_${scala.binary.version}</artifactId>
 
     <properties>
         <flink.version>1.11.6</flink.version>
